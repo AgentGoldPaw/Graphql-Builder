@@ -33,8 +33,8 @@ export class Base {
   }
 
   toString(): string {
-    return `${this.name}${this.input ? '(' + this.input + ')' : ''} : ${
-      this.output
-    }`;
+    return `${this.name}${
+      this.input ? '(' + this.input.name + ':' + this.input + ')' : ''
+    } : ${this.output}`;
   }
 }

@@ -14,6 +14,10 @@ export default class Schema {
     return this;
   }
 
+  getInput(name: string): Input {
+    return this.input.get(name);
+  }
+
   addQuery(name: string, options: queryOptions): Schema {
     this.query.set(name, new Query(name, options));
     return this;
@@ -46,19 +50,3 @@ export default class Schema {
     return `${this}`;
   }
 }
-
-const schema = new Schema();
-const user = new Type('User').addField('id', fieldType.STRING, true);
-const userInput = new Input('UserInput').addField('id', fieldType.STRING, true);
-schema
-  .addInput('UserInput', userInput)
-  .addType('User', user)
-  .addQuery('getUser', {
-    output: schema.getType('User'),
-  })
-  .addMutation('createUser', {
-    input: schema.getType('User'),
-    output: schema.getType('User'),
-  });
-
-console.log(schema.compile());
