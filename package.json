@@ -1,0 +1,25 @@
+{
+  "name": "graphql-builder",
+  "version": "0.0.1",
+  "description": "nodejs graphql schema builder in code",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RedMunroe/Graphql-Builder.git"
+  },
+  "keywords": [
+    "graphql",
+    "nodejs",
+    "schema",
+    "builder"
+  ],
+  "author": "RedMunroe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RedMunroe/Graphql-Builder/issues"
+  },
+  "homepage": "https://github.com/RedMunroe/Graphql-Builder#readme"
+}
