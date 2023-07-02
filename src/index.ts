@@ -4,6 +4,9 @@ import { QueryBucket, Q, Query, queryOptions } from './query';
 import { Mutation, MutationBucket, M } from './mutation';
 import { options } from './base';
 import { Input, I, InputBucket } from './input';
+
+export { Type, Query, Input, Mutation, fieldType };
+
 export default class Schema {
   private query: Q = new QueryBucket();
   private mutation: M = new MutationBucket();
