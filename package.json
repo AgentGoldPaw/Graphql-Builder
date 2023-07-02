@@ -1,6 +1,6 @@
 {
   "name": "@redmunroe/graphql-builder",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "nodejs graphql schema builder in code",
   "main": "dist/index.js",
   "scripts": {
